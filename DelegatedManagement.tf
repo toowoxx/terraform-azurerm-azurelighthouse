@@ -18,5 +18,5 @@ resource "azurerm_lighthouse_definition" "lighthouse_definition" {
 // for onboarding other subscriptions you have to open a new subscription context.
 resource "azurerm_lighthouse_assignment" "lighthouse_assignment" {
   scope                    = data.azurerm_subscription.current.id
-  lighthouse_definition_id = azurerm_lighthouse_definition.Toowoxx-Management-Lighthouse-Definition.id
+  lighthouse_definition_id = azurerm_lighthouse_definition.lighthouse_definition.id
 }

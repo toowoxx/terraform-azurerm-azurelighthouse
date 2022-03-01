@@ -1,9 +1,8 @@
 variable "managing_tenant_id" {
   description = "The tenant ID of the tenant that is managing the resources, usually the service providers tenant"
 }
-
 variable "principal_id" {
-  description = "The Object ID of the Object that should have access to the managed tenant. This can be a user, group, or service principal. This principal must exist in the tenant that is managing the resources, usually the service providers tenant"
+  description = "The Object ID of the object that should have access to the managed tenant. This can be a user, group, or service principal. This principal must exist in the tenant that is managing the resources, usually the service provider's tenant"
 }
 
 variable "role_defintion_id" {
